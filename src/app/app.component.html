@@ -1,5 +1,9 @@
 <h1><span style="color:#285783">Welcome to Angular and ASP.NET Core  Demo </span></h1>  
-  
+
+<app-header></app-header>
+<div class="m-t-1">
+  <router-outlet></router-outlet>
+</div>
 <hr />  
 <li *ngFor="let item of items">
   {{item}}
