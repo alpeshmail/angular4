@@ -6,12 +6,15 @@ import {Routes, RouterModule, Router, ActivatedRoute} from "@angular/router";
 import { AppService } from './app.service';
 import { AppComponent } from './app.component';
 import { HomeComponent,SearchComponent,HeaderComponent } from './Home/home.component';
+import {HeroParentComponent } from './Hero/hero-parent.component'
+import {HeroChildComponent } from './Hero/hero-child.component'
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'find', redirectTo: 'search'},
   {path: 'home', component: HomeComponent},
   {path: 'search', component: SearchComponent},
+  {path: 'hero', component: HeroParentComponent},
   // {
   //   path: 'artist/:artistId',
   //   component: ArtistComponent,
@@ -29,7 +32,11 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     SearchComponent,
-    HeaderComponent  ],
+    HeaderComponent ,
+    HeroParentComponent,
+    HeroChildComponent
+    
+  ],
   imports: [
     BrowserModule,  
         HttpModule ,

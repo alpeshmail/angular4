@@ -45,6 +45,12 @@ import {Router} from "@angular/router";
            [routerLink]="['search']">Search
         </a>
       </li>
+      <li class="nav-item"
+      [routerLinkActive]="['active']">
+        <a class="nav-link"
+        [routerLink]="['hero']">Hero
+    </a>
+  </li>
     </ul>
   </nav>
    `
